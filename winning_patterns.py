@@ -73,5 +73,5 @@ def winning_patterns(game_matrix):
             running = False
             return running
         else:
-            print("GAME STILL RUNNING")
-
+            #print("GAME STILL RUNNING")
+            pass
