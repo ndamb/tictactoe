@@ -76,13 +76,16 @@ def main(curr_player, first_run, options, ki):
                         else:
                             print("Sucess: continuing to place the sign")
                             draw_ki(screen, ki_choice)
+                            curr_player += 1
+                            if curr_player is 2:
+                                curr_player = 0
 
                     elif mouse_positions(game_matrix, screen, x_pos, y_pos, RED, BLUE, curr_player) is False:
                         print("continue 1338")
                         continue
                     else:
                         curr_player += 1
-                        if curr_player is 2:
+                        if curr_player >= 2:
                             curr_player = 0
 
 
